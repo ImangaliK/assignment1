@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <div id="headliner">
+      <h1>Portfolio: Kuanysh Imangali</h1>
+    </div>
+  </div>
+
+  <div class="bottom-wrapper">
+    <div id="init">
+        <center>
+            <br>
+            <meta charset="utf-8">
+            <title>my_picture</title>
+                <p><img src="my_picture.jpeg"width="140" height="170"></p>
+        </center>
+      <br>
+    </div>
+
+    <div class="f-body">
+      <div id="personalinfo">
+        <a class="block-header">Personal Info</a>
+        <p>
+            My name is Imangali. I am 19 years old and from West side of Kazakhstan. During all my life I have been very interested in computers and laptops, the functions of which I have studied since childhood. 
+            The start of my interests to Computer Science, began when I was 13 years old. I had applied to NIS CBD in Atyrau city.
+        </p>
+      </div>
+
+      <div id="formation">
+          <a class="block-header">Formation</a>
+          <ul>
+              <li><strong>School #6 in Kulsary</strong> <em>2008-2015</em></li>
+              <li>
+                  <strong>Nazarbayev Intellectual School</strong> <em>2015-2021</em>
+              </li>
+              <li><strong>Astana IT University</strong> <em>1st year student</em></li>
+          </ul>
+          In addition to my knowledge in the field of education, I am an excellent creative person. From the age of 7-8 until today, I have been playing football. I am also interested in drawing in black and white style.
+          But the recent times, I find my in business sphere, SMM-advance and Graphic designer being. I have practical skills enough to work with people, create a post, main-ads, logos and so on.
+      </div>
+    </div>
+
+    <section class="skills">
+      <a class="block-header">Skills & Performance</a>
+      <ol>
+        <li>
+          Football skills
+          <br>
+          <progress id="ps" value="90" max="100"></progress> 90%
+        </li>
+        <li>
+          HTML
+          <br>
+          <progress id="html" value="70" max="100"></progress> 70%
+        </li>
+        <li>
+          CSS
+          <br>
+          <progress id="css" value="70" max="100"></progress> 70%
+        </li>
+      </ol>
+    </section>
+
+    <div id="contact-me">
+      <a class="block-header">Contact Me</a>
+      <form action="index.html" method="post">
+        <p>Name: <input type="text" name="name" /></p>
+        <p>Phone number: <input type="text-area" name="age" /></p>
+        <p>Your offer:</p>
+        <textarea rows="4" cols="50" name="comment" form="contact-me">
+        Enter text here...
+        </textarea>
+        <p><input type="submit"></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <a href="#personalinfo" class="btn2top">2TOP</a>
+  <p>Print a portfolio by pressing <kbd>Ctrl + P</kbd></p>
+  <a href="https://instagram.com/imangali_k"><i class="fa fa-instagram" style="font-size:30px;color:black"></i></a>
+  <a href="https://vk.com/imosh22"><i class="fa fa-vk" style="font-size:30px;color:black"></i></a>
+  <br>
+  &copy by imangali_k
+</footer>
+
+<script>
+  window.onscroll = function() {
+    myFunction()
+  };
+
+  var header = document.getElementById("headliner");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+
+</html>
